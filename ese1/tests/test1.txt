@@ -1,0 +1,6 @@
+Scrivere un programma che implementi il paradigma Produttore-Consumatore basato su PIPE.
+Il processo Consumatore deve ricevere da riga di comando il pathname di uni file di testo.
+Successivamente, il processo Consumatore crea una PIPE, e un processo Produttore. Il processo
+Produttore legge il contenuto del file in chunk di massimo 100 caratteri. Ogni chunk letto
+viene inviato al processo Consumatore attraverso la PIPE. Il processo Consumatore stampa il
+contenuto del file ricevuto per mezzo della PIPE.

@@ -1,0 +1,2 @@
+/home/nick/UNI/SO/Labs/Lab6/Esercizi/PIPE/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nick/UNI/SO/Labs/Lab6/Esercizi/PIPE/cmake-build-debug/CMakeFiles/rebuild_cache.dir
