@@ -1,0 +1,24 @@
+Soluzione:
+Il Produttore antepone il numero di byte che intende scrive, prima dei dati effettivi.
+---------------------------------------------------------------------------------
+PIPE read end ← | 2 | byte-1 byte-2| 4| byte-1 byte-2 byte-3 byte-4| ----
+---------------------------------------------------------------------------------
+Il contenuto della PIPE sopra riportata mostra due chunk di dati.
+Il primo chunk ha dimensione 2 bytes, mentre il secondo ha dimensione 4 bytes.
+Consiglio:
+definire la seguente struttura:
+struct Item {
+ssize_t size;
+char value[MSG_BYTE];
+};
+Il campo size contiene il numero di byte che il processo Produttore intende scrivere sulla PIPE
+Il campo value contiene i dati effettivi inviati tramite PIPE.
+struct Item item;
+// ... il Produttore inizializza item come sopra descritto
+// dimensione chuck e chunk sono copiati nella PIPE in modo atomico tramite write()
+write(PIPE, &item, item.size + sizeof(item.size));
+Il processo Consumatore, legge dalla PIPE prima il campo size e poi i dati.
+ssize_t size;
+read(PIPE, &size, sizeof(size)); // leggo dimensione chunk
+read(PIPE, &buffer, size);
+// leggo chunk

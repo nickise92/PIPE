@@ -4,5 +4,6 @@
 ## Binary files ##
 */bin/*
 
-## Cmake default build-debug ##
-cmake-build-debug/*
+## Tests files ##
+*.sh
+

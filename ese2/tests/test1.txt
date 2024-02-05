@@ -1,0 +1,5 @@
+Estendere Ese_1 affinché il processo Consumatore riceva da riga di comando una lista di pathname di
+file di testo. Per ogni file di testo, il processo Consumatore crea un processo Produttore, il quale invia il
+contenuto del file di testo al Consumatore attraverso un’unica PIPE.
+La PIPE e’ un bytes stream channel. Se due o piu’ Produttori scrivono sulla stessa PIPE, come possiamo
+distinguere i dati scritti da un Produttore, dai dati scritti da un altro Produttore?

@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /home/nick/UNI/SO/Labs/Lab6/Esercizi/PIPE Select CMakeLists.txt
