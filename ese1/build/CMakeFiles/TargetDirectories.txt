@@ -1,3 +1,0 @@
-/home/nick/UNI/SO/Labs/Lab6/Esercizi/PIPE/ese1/build/CMakeFiles/pipe1.dir
-/home/nick/UNI/SO/Labs/Lab6/Esercizi/PIPE/ese1/build/CMakeFiles/edit_cache.dir
-/home/nick/UNI/SO/Labs/Lab6/Esercizi/PIPE/ese1/build/CMakeFiles/rebuild_cache.dir
